@@ -1,0 +1,14 @@
+num = int(input('두자리 정수를 입력하시오 ex)ab : '))
+if(num<0 or num >100):
+    print('잘못 입력하셨습니다.')
+a= num
+count =0
+while True:
+    sec = num % 10
+    fir = num // 10 + sec
+    new = sec*10 + fir%10
+    num = new
+    count += 1
+    if(a == new):
+        print(count)
+        break
